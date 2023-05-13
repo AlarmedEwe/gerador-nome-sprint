@@ -5,17 +5,7 @@ function generateName() {
   for (var i = 0; i < selectedCategories.length; i++) {
     if (selectedCategories[i].checked) {
       var category = selectedCategories[i].value;
-      switch (category) {
-        case "animals":
-          selectedNames = selectedNames.concat(animals);
-          break;
-        case "cars":
-          selectedNames = selectedNames.concat(cars);
-          break;
-        case "countries":
-          selectedNames = selectedNames.concat(countries);
-          break;
-      }
+      selectedNames = selectedNames.concat(names[category]);
     }
   }
   var indice = Math.floor(Math.random() * selectedNames.length);

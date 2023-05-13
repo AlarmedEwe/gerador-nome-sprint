@@ -2,7 +2,7 @@ var container = document.getElementById("category-container");
 
 categories.forEach(function (categoria) {
   var div = document.createElement("div");
-  div.className = "col s2";
+  div.className = "col s3";
 
   var p = document.createElement("p");
 
