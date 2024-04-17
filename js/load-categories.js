@@ -1,5 +1,7 @@
 var container = document.getElementById("category-container");
 
+categories.sort((a, b) => {});
+
 categories.forEach(function (categoria) {
   var div = document.createElement("div");
   div.className = "col s3";
